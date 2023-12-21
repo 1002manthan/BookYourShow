@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            background-image: url(img/background.avif);
+            background-size: cover;
+        }
+
+        ::placeholder{
+            color: lightgray;
+        }
+
+        label{
+            color: lightgray;
+        }
+
+        select{
+            background-color: gray;
+            color: lightgray;
+        }
+
+        option{
+            color: lightgray;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Show Ticket Booking</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body >
+    <br>
+    <div class="container" style="font-family: 'Georgia';">
+        <div>
+            <div style="margin-left: 450px;">
+                <form action="success.html">
+                    <label for="fname"><b>First name:</b></label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required style="background-color: gray; color: lightgray;">
+                    <br>
+                    <br>
+                    <label for="lname"><b>Last name:</b></label>
+                    <br>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required style="background-color: gray;">
+                    <br>
+                    <br>
+                    <label for="Email"><b>Email:</b></label>
+                    <br>
+                    <input type="email" id="Email" name="Email" placeholder="Enter your Email" required style="background-color: gray;">
+                    <br>
+                    <br>
+                    <label for="gender"><b>Gender:</b></label>
+                    <br>
+                    <input type="radio" id="m" name="gender" value="Male" required>
+                    <label for="m">Male</label><br>
+                    <input type="radio" id="f" name="gender" value="Female" required>
+                    <label for="f">Female</label><br>
+                    <input type="radio" id="o" name="gender" value="Other" required>
+                    <label for="o">Other</label><br>
+                    <label for="city"><b>City:</b></label><br>
+                    <select name="city" id="city" required>
+                        <option selected>City</option>
+                        <option value="Himmatnagar">Himmatnagar</option>
+                        <option value="Himmatnagar">Ahmedabad</option>
+                        <option value="Himmatnagar">Gandhinagar</option>
+                        <option value="Himmatnagar">Vadodara</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="selectShow"><b>Select Show:</b></label><br>
+                    <select name="selectShow" id="selectShow" required>
+                        <option selected>Select</option>
+                        <option value="ST_s1_book">Stranger Things: Season 1</option>
+                        <option value="ST_s2_book">Stranger Things: Season 2</option>
+                        <option value="ST_s3_book">Stranger Things: Season 3</option>
+                        <option value="ST_s4_book">Stranger Things: Season 4</option>
+                        <option value="wed_s1_book">Wednesday: Season 1</option>
+                        <option value="luci_s1_book">Lucifer: Season 1</option>
+                        <option value="luci_s2_book">Lucifer: Season 2</option>
+                        <option value="luci_s3_book">Lucifer: Season 3</option>
+                        <option value="luci_s4_book">Lucifer: Season 4</option>
+                        <option value="luci_s5_book">Lucifer: Season 5</option>
+                        <option value="mon_s1_book">Money Hiest: Season 1</option>
+                        <option value="mon_s2_book">Money Hiest: Season 2</option>
+                        <option value="mon_s3_book">Money Hiest: Season 3</option>
+                        <option value="mon_s4_book">Money Hiest: Season 4</option>
+                        <option value="mon_s5_book">Money Hiest: Season 5</option>
+                        <option value="deathsGame_s1_book">Death's Game: Season 1</option>
+                        <option value="nhie_s1_book">Never Have I Ever: Season 1</option>
+                        <option value="nhie_s2_book">Never Have I Ever: Season 2</option>
+                        <option value="nhie_s3_book">Never Have I Ever: Season 3</option>
+                        <option value="nhie_s4_book">Never Have I Ever: Season 4</option>
+                        <option value="mon_s5_book">Money Hiest: Season 5</option>
+                        <option value="deathsGame_s1_book">Death's Game: Season 1</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="btn btn-outline-success">BOOK TICKETS</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

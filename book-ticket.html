@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            background-image: url(img/background.avif);
+            background-size: cover;
+        }
+
+        ::placeholder{
+            color: lightgray;
+        }
+
+        label{
+            color: lightgray;
+        }
+
+        select{
+            background-color: gray;
+            color: lightgray;
+        }
+
+        option{
+            color: lightgray;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ticket Booking</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <br>
+    <div class="container" style="font-family: 'Georgia';">
+        <div class="row">
+            <div style="margin-left: 450px;">
+                <form action="success.html">
+                    <label for="fname"><b>First name:</b></label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required style="background-color: gray; color: lightgray;">
+                    <br>
+                    <br>
+                    <label for="lname"><b>Last name:</b></label>
+                    <br>
+                    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required style="background-color: gray;">
+                    <br>
+                    <br>
+                    <label for="Email"><b>Email:</b></label>
+                    <br>
+                    <input type="email" id="Email" name="Email" placeholder="Enter your Email" required style="background-color: gray;">
+                    <br>
+                    <br>
+                    <label for="gender"><b>Gender:</b></label>
+                    <br>
+                    <input type="radio" id="m" name="gender" value="Male" required >
+                    <label for="m">Male</label><br>
+                    <input type="radio" id="f" name="gender" value="Female" required>
+                    <label for="f">Female</label><br>
+                    <input type="radio" id="o" name="gender" value="Other" required>
+                    <label for="o" >Other</label><br>
+                    <label for="city"><b>City:</b></label><br>
+                    <select name="city" id="city" required>
+                        <option selected>City</option>
+                        <option value="Himmatnagar">Himmatnagar</option>
+                        <option value="Himmatnagar">Ahmedabad</option>
+                        <option value="Himmatnagar">Gandhinagar</option>
+                        <option value="Himmatnagar">Vadodara</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="selectmovies"><b>Select Movies:</b></label><br>
+                    <select name="selectmovies" id="selectmovies" required>
+                        <option selected>Movie</option>
+                        <option value="theshift_book">The Shift</option>
+                        <option value="silentnight_book">Silent Night</option>
+                        <option value="theconjuring_2013_book">The Conjuring(2013)</option>
+                        <option value="GodzillaMinusOne_book">Godzilla Minus One</option>
+                        <option value="thefaultinourstar_book">The Fault In Our Star</option>
+                        <option value="fs_1_book">Fear Street Part One: 1994</option>
+                        <option value="HarryPotter1_book">Harry Potter and the Philosopher's Stone</option>
+                        <option value="HarryPotter2_book">Harry Potter and the Chamber Of Secrets</option>
+                        <option value="HarryPotter3_book">Harry Potter and the Prisoner Of Azkaban</option>
+                        <option value="HarryPotter4_book">Harry Potter and the Goblet Of Fire</option>
+                        <option value="HarryPotter5_book">Harry Potter and the Order Of The Phoenix</option>
+                        <option value="HarryPotter6_book">Harry Potter and the Half-Blood Prince</option>
+                        <option value="HarryPotter7.1_book">Harry Potter and the Deathly Hallows: Part 1</option>
+                        <option value="HarryPotter7.2_book">Harry Potter and the Deathly Hallows: Part 2</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="no_oftic"><b>No. of Tickets:</b></label>
+                    <input type="number" id="no_oftic" name="no_oftic" min="1" max="60" required style="background-color: gray;">
+                    <br>
+                    <br>
+                    <button class="btn btn-outline-success" style="color: lightgray;">BOOK TICKETS</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
